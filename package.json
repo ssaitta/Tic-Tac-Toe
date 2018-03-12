@@ -5,19 +5,23 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "http-server -a localhost -p 3000",
-    "start-dev": "webpack -w & http-server -a localhost -p 3000"
+    "start": "node index.js",
+    "start-dev": "webpack -w & nodemon -w index.js"
   },
   "author": "Sierra",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
-    "express": "^4.16.2",
-    "http-server": "^0.11.1",
+    "finalhandler": "^1.1.1",
     "nodemon": "^1.17.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-router-dom": "^4.2.2"
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-logger": "^3.0.6",
+    "serve-static": "^1.13.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
