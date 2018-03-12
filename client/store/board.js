@@ -13,7 +13,7 @@ const initialState = [
     [[], [], []],
     [[], [], []],
     [[], [], []]
-] //empty board
+]
 
 const board = function(state = initialState, action){
     switch (action.type){
@@ -21,9 +21,7 @@ const board = function(state = initialState, action){
             return [[[], [], []], [[], [], []], [[], [], []]]
         case ADD_PIECE:
             let newBoard = [].concat(state)
-            if(newBoard[action.row][action.col].length < 1){
-                newBoard[action.row][action.col].push(action.piece)
-            }
+            newBoard[action.row][action.col].push(action.piece)
             return newBoard
         default:
             return state
