@@ -1,10 +1,7 @@
 import React, { Component } from 'react'
-import Header from './Header'
 import Board from './Board'
 import Buttons from './Buttons'
 
-// class Home extends Component{
-//     render(){
 function Home(){
     return (
         <div>
@@ -14,7 +11,5 @@ function Home(){
         </div>
     )
  }
-//     }
-// }
 
 export default Home
