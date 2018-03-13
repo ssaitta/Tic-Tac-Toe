@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "start-dev": "webpack -w & nodemon -w index.js",
-    "deploy": "git checkout -b deploy && webpack -p && git add -f public/bundle.js public/bundle.js.map && git commit --allow-empty -m 'Deploying' && git push --force heroku master && git checkout master && git branch -D deploy"
+    "deploy": "webpack -p && git add -f public/bundle.js public/bundle.js.map && git commit --allow-empty -m 'Deploying' && git push --force heroku master"
   },
   "author": "Sierra",
   "license": "ISC",
