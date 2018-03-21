@@ -1,6 +1,8 @@
 # Tic-Tac-Toe
 Tic-Tac-Toe game built with React/Redux
 
+[Play here!](https://saitta-tic-tac-toe.herokuapp.com/)
+
 ## Installing
 * Clone the repo
 ```
